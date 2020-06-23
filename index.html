@@ -6,8 +6,8 @@
     <meta charset="utf-8" />
     <meta name="description" content="Abhijeet Saxena Portfolio Website" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./main.css" />
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="./main.min.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
 
   <body class="loading">
@@ -74,15 +74,15 @@
       <main>
         <!-- Header -->
         <header>
-          <img
-            class="avatar"
-            src="assets/images/avatar.jpg"
-            alt="Abhijeet Saxena Avatar"
-          />
+          <picture class="avatar">
+            <source type="image/webp" srcset="assets/images/avatar.webp" />
+            <source type="image/jpeg" srcset="assets/images/avatar.jpg" />
+            <img src="assets/images/avatar.webp" alt="Abhijeet Saxena Avatar" />
+          </picture>
+
           <h2>Hey there, I'm</h2>
           <h1>
-            <del>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</del> Abhijeet Saxena
-            <del>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</del>
+            Abhijeet Saxena
           </h1>
           <p>
             Web Developer &nbsp;&bull;&nbsp; Techie &nbsp;&bull;&nbsp; ♡
@@ -198,14 +198,6 @@
       window.onorientationchange = function () {
         document.body.scrollTop = 0;
       };
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-      WebFont.load({
-        google: {
-          families: ["Source Sans Pro"],
-        },
-      });
     </script>
   </body>
 </html>
