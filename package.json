@@ -1,0 +1,21 @@
+{
+  "name": "itsrockyy.github.io",
+  "version": "1.0.0",
+  "description": "Abhijeet Saxena personal website",
+  "main": "index.js",
+  "scripts": {
+    "minify": "cleancss -o main.min.css main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsRockyy/itsrockyy.github.io.git"
+  },
+  "keywords": [
+    "Personal"
+  ],
+  "author": "Abhijeet Saxena",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css-cli": "^4.3.0"
+  }
+}
