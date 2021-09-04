@@ -1,0 +1,4 @@
+[[redirects]]
+  from = '/*'
+  to = 'https://abhijeet-saxena.github.io/:splat'
+  status = 200
