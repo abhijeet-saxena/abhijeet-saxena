@@ -1,5 +1,5 @@
 {
-  "name": "itsrockyy.github.io",
+  "name": "abhijeetsaxena.in",
   "version": "1.0.0",
   "description": "Abhijeet Saxena personal website",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/itsRockyy/itsrockyy.github.io.git"
+    "url": "git+https://github.com/abhijeet-saxena/abhijeet-saxena.git"
   },
   "keywords": [
     "Personal"
