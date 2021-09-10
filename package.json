@@ -4,7 +4,7 @@
   "description": "Abhijeet Saxena personal website",
   "main": "index.js",
   "scripts": {
-    "preprocess": "postcss style.css -o dist/style.css && uglifyjs main.js -o dist/main.js -c -m"
+    "preprocess": "postcss style.css -o assets/style.css && uglifyjs main.js -o assets/main.js -c -m"
   },
   "repository": {
     "type": "git",

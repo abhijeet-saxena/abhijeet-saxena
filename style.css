@@ -286,19 +286,16 @@ footer ul li:hover::after {
     line-height: 1.25;
   }
   #jumbotron {
-    padding: 2rem 0 0;
+    padding: 1rem 0 0;
+    justify-content: space-evenly;
   }
   #jumbotron a {
     font-size: 1rem;
-  }
-  #jumbotron p {
-    margin: 2rem 0 0;
   }
   #jumbotron img {
     position: static;
     width: 90vw;
     height: auto;
-    margin-top: auto;
   }
   #projects {
     gap: 4rem;
