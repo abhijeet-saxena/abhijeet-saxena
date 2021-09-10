@@ -2,7 +2,7 @@
 
 > ### Techie | ♡ JavaScript | Building Delightful User Experiences 🤩
 
-<img width="200" height="200" style="border-radius: 50%" src="https://avatars1.githubusercontent.com/u/20384478?s=460&u=7449c20f66d5b01d4c457f11cf8f064e7d420361&v=4">
+<!-- <img width="200" height="200" style="border-radius: 50%" src="https://avatars1.githubusercontent.com/u/20384478?s=460&u=7449c20f66d5b01d4c457f11cf8f064e7d420361&v=4"> -->
 
 Hi there 👋 I'm Abhijeet. I am a full-stack developer from India 🇮🇳. I have 5+ years of experience in web development.
 
