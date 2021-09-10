@@ -4,7 +4,7 @@
   "description": "Abhijeet Saxena personal website",
   "main": "index.js",
   "scripts": {
-    "minify": "cleancss -o main.min.css main.css"
+    "preprocess": "postcss style.css -o dist/style.css && uglifyjs main.js -o dist/main.js -c -m"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,10 @@
   "author": "Abhijeet Saxena",
   "license": "MIT",
   "devDependencies": {
-    "clean-css-cli": "^4.3.0"
+    "autoprefixer": "^10.3.4",
+    "cssnano": "^5.0.8",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "uglify-js": "^3.14.2"
   }
 }
