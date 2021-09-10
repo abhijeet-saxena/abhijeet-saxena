@@ -35,13 +35,11 @@ h3 {
 p {
   font-size: 1.25rem;
   line-height: 1.75;
-  font-weight: 100;
   color: var(--gray);
 }
 
 small {
   color: var(--gray);
-  font-weight: 100;
 }
 
 svg {
@@ -62,7 +60,6 @@ svg {
 .link {
   text-decoration: none;
   color: black;
-  font-weight: 100;
   position: relative;
   display: flex;
   align-items: center;

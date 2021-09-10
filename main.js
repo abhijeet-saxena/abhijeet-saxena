@@ -7,3 +7,9 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+
+document
+  .querySelector("#jumbotron img")
+  .addEventListener("mouseenter", function () {
+    this.src = this.src;
+  });
