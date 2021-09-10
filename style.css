@@ -1,0 +1,333 @@
+/* Reset Styles */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --gray: rgba(0, 0, 0, 0.8);
+  --light-gray: rgba(0, 0, 0, 0.5);
+}
+
+li {
+  text-indent: 0;
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.75;
+  font-weight: 100;
+  color: var(--gray);
+}
+
+small {
+  color: var(--gray);
+  font-weight: 100;
+}
+
+svg {
+  height: 2rem;
+  width: 2rem;
+}
+
+/* Utility Classes */
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: 100;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.link::after {
+  position: absolute;
+  content: "";
+  width: 0.75rem;
+  height: 0.4rem;
+  background: black;
+  bottom: -0.5rem;
+  left: -0.1rem;
+  transition: 250ms ease-in-out;
+  border-radius: 0.25rem;
+}
+
+.link:hover::after {
+  width: 100%;
+  height: 0.2rem;
+}
+
+/* Container & Navbar Styles */
+
+body {
+  width: 80vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+}
+
+nav {
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav img {
+  transition: transform 250ms ease-in-out;
+}
+
+nav img:hover {
+  transform: scale(1.2) rotateZ(-10deg);
+}
+
+nav ul {
+  gap: 2rem;
+}
+
+/* Jumbotron Section */
+
+#jumbotron {
+  height: calc(100vh - 60px);
+  position: relative;
+  padding-top: 8rem;
+  padding-left: 0.5rem;
+}
+
+#jumbotron img {
+  position: absolute;
+  right: -6rem;
+  bottom: 0;
+  height: 100%;
+  opacity: 0;
+  animation: fadein 1s ease-in-out forwards;
+}
+
+#jumbotron p {
+  margin: 2rem 0;
+}
+
+.robot {
+  display: inline-block;
+  animation: shake 2s ease-in-out infinite;
+}
+
+#jumbotron a {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+/* Work Section */
+
+#projects {
+  gap: 8rem;
+  padding-top: 8rem;
+}
+
+article {
+  display: flex;
+  gap: 2rem;
+}
+
+article:nth-child(2n) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+article:nth-child(2n) .app-links {
+  justify-content: flex-end;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+  gap: 1rem;
+}
+
+.app-links {
+  gap: 2rem;
+  margin-top: auto;
+}
+
+.poster {
+  flex: 1 1 50%;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.poster img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  transition: transform 200ms ease-in;
+}
+
+.poster img:hover {
+  transform: scale(1.05);
+}
+
+/* About Section */
+
+#about {
+  padding-top: 8rem;
+  max-width: 800px;
+}
+
+#about p {
+  max-width: 600px;
+  margin-top: 1rem;
+}
+
+/* Footer Section */
+
+footer {
+  padding: 4rem 0;
+}
+
+footer ul {
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+footer ul li {
+  position: relative;
+  transition: transform 200ms ease-in-out;
+}
+
+footer ul li::after {
+  content: attr(data-hover);
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  bottom: -0.75rem;
+  color: var(--light-gray);
+  font-size: 0.75rem;
+}
+
+footer ul li:hover {
+  transform: scale(1.2);
+}
+
+footer ul li:hover::after {
+  opacity: 1;
+}
+
+/* Animations */
+
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%,
+  80%,
+  100% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(10deg);
+  }
+  95% {
+    transform: rotate(-10deg);
+  }
+}
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 90vw;
+  }
+  nav ul {
+    gap: 1rem;
+    font-size: 0.75rem;
+  }
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+  #jumbotron {
+    padding: 2rem 0 0;
+  }
+  #jumbotron a {
+    font-size: 1rem;
+  }
+  #jumbotron p {
+    margin: 2rem 0 0;
+  }
+  #jumbotron img {
+    position: static;
+    width: 90vw;
+    height: auto;
+    margin-top: auto;
+  }
+  #projects {
+    gap: 4rem;
+    padding-top: 6rem;
+  }
+  article {
+    flex-direction: column-reverse !important;
+    justify-content: flex-start;
+  }
+  .description {
+    align-items: flex-start;
+    text-align: left;
+  }
+  footer ul {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+  }
+  #jumbotron {
+    padding: 4rem 0;
+  }
+  #jumbotron img {
+    height: 100%;
+    right: -8rem;
+    height: 60vw;
+  }
+}
