@@ -121,6 +121,7 @@ nav ul {
   bottom: 0;
   opacity: 0;
   animation: fadein 1s ease-in-out forwards;
+  height: 100%;
 }
 
 #jumbotron p {
