@@ -30,6 +30,7 @@ h2 {
 
 p {
   font-size: 1.25rem;
+  font-weight: 100;
   line-height: 1.75;
   color: var(--gray);
 }
@@ -148,11 +149,23 @@ nav ul {
   font-weight: 400;
 }
 
-/* Work Section */
+h2 {
+  margin-top: 8rem;
+}
+
+/* Work Experience Section */
+
+#companies img,
+#volunteering img {
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Projects Section */
 
 #projects {
-  gap: 8rem;
-  padding-top: 8rem;
+  gap: 6rem;
+  padding-top: 2rem;
 }
 
 article {
@@ -176,6 +189,11 @@ article:nth-child(2n) .app-links {
   gap: 1rem;
 }
 
+.description h2 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
 .app-links {
   gap: 2rem;
   margin-top: auto;
@@ -197,10 +215,19 @@ article:nth-child(2n) .app-links {
   transform: scale(1.05);
 }
 
+/* Volunteer section */
+
+#companies .flex,
+#volunteering .flex {
+  margin-top: 2rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
 /* About Section */
 
 #about {
-  padding-top: 8rem;
   max-width: 800px;
 }
 
@@ -212,7 +239,7 @@ article:nth-child(2n) .app-links {
 /* Footer Section */
 
 footer {
-  padding: 4rem 0;
+  padding-bottom: 4rem;
 }
 
 footer ul {
@@ -299,7 +326,7 @@ footer ul li:hover::after {
   }
   #projects {
     gap: 4rem;
-    padding-top: 6rem;
+    padding-top: 2rem;
   }
   article {
     flex-direction: column-reverse !important;
@@ -309,6 +336,13 @@ footer ul li:hover::after {
     align-items: flex-start;
     text-align: left;
   }
+  h2 {
+    margin-top: 4rem;
+  }
+  .description h2 {
+    margin-top: 0;
+  }
+
   footer ul {
     flex-wrap: wrap;
     gap: 0.5rem;
