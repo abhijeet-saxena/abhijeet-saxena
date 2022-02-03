@@ -1,4 +1,8 @@
 [[redirects]]
+  from = '/star-wars'
+  to = 'https://abhijeet-saxena.github.io/star-wars'
+  status = 200
+[[redirects]]
   from = '/*'
   to = 'https://abhijeet-saxena.github.io/:splat'
   status = 200
