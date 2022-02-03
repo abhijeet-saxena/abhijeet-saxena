@@ -1,6 +1,6 @@
 [[redirects]]
-  from = '/star-wars/*'
-  to = 'https://abhijeet-saxena.github.io/star-wars/:splat'
+  from = '/wordle/*'
+  to = 'https://abhijeet-saxena.github.io/wordle/:splat'
   status = 200
 [[redirects]]
   from = '/*'
