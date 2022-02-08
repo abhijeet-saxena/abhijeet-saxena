@@ -1,7 +1,8 @@
 [[redirects]]
-  from = '/*'
-  to = 'https://abhijeet-saxena.github.io/:splat'
+  from = '/:project/:slug'
+  to = 'https://abhijeet-saxena.github.io/:project/:slug'
   status = 200
+  force = true
 [[headers]]
   for = "/*"
   [headers.values]
