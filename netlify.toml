@@ -1,6 +1,6 @@
 [[redirects]]
-  from = '/:project/:slug'
-  to = 'https://abhijeet-saxena.github.io/:project/:slug'
+  from = '/:project/*'
+  to = 'https://abhijeet-saxena.github.io/:project/:splat'
   status = 200
   force = true
 [[headers]]
