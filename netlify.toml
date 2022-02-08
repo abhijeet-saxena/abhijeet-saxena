@@ -1,8 +1,4 @@
 [[redirects]]
-  from = '/wordle/*'
-  to = 'https://abhijeet-saxena.github.io/wordle/:splat'
-  status = 200
-[[redirects]]
   from = '/*'
   to = 'https://abhijeet-saxena.github.io/:splat'
   status = 200
