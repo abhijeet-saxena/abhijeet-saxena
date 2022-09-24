@@ -24,6 +24,8 @@ Here are some ideas to get you started:
 
 ### `Checkout My Projects`
 
+Wordle | [Code](https://github.com/abhijeet-saxena/wordle) | [Live](https://abhijeetsaxena.in/wordle)
+
 Popcorn Times | [Code](https://github.com/abhijeet-saxena/popcorn-times) | [Live](https://popcorn-times.netlify.app/)
 
 WYSIWYG Editor | [Code](https://github.com/abhijeet-saxena/wysiwyg) | [Live](https://abhijeetsaxena.in/wysiwyg/)
