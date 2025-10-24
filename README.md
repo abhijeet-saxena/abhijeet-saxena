@@ -2,7 +2,7 @@
 
 > ### ♡ JavaScript • Building Delightful UX • Everything from concept to creation ✰
 
-Hi there 👋 I'm Abhijeet. I am a full-stack developer from India 🇮🇳. I have 6+ years of experience in web development.
+Hi there 👋 I'm Abhijeet. I am a full-stack developer from India 🇮🇳. I have 9+ years of experience in web development.
 
 I'm knowledgeable in UI and UX, web standards, responsive design, accessibility, performance, testing, and the emerging technologies within the field.
 
